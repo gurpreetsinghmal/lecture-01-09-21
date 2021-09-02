@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -30,7 +31,9 @@ public class HomeActivity extends AppCompatActivity {
          initref();
          toolbar.setTitleTextColor(getResources().getColor(R.color.white));
          setSupportActionBar(toolbar);
-        getWindow().setStatusBarColor(getResources().getColor(R.color.primary));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setStatusBarColor(getResources().getColor(R.color.primary));
+        }
 
 
         adapter=new Myrecyclerview(this,createlist());
