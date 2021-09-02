@@ -34,7 +34,7 @@ public class HomeActivity extends AppCompatActivity {
             getWindow().setStatusBarColor(getResources().getColor(R.color.primary));
         }
 
-
+        //setup recycler view
         adapter=new Myrecyclerview(this,createlist());
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
