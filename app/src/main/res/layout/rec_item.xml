@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/grad_end"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="5sp"
+        app:cardElevation="5sp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:id="@+id/imv_rec"
+        android:src="@mipmap/img1"
+        android:scaleType="centerCrop"
+        app:shapeAppearanceOverlay="@style/circularimage"
+        />
+        <TextView
+            android:id="@+id/tv_t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Dummy text"
+            android:layout_toRightOf="@id/imv_rec"
+            android:layout_margin="5sp"
+            />
+            <TextView
+                android:id="@+id/tv_t2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Dummy text"
+                android:layout_toRightOf="@id/imv_rec"
+                android:layout_below="@id/tv_t1"
+                android:layout_marginLeft="5sp"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
