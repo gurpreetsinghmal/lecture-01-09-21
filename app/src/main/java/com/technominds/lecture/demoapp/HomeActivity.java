@@ -19,7 +19,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HomeActivity extends AppCompatActivity {
-
     Toolbar toolbar;
     RecyclerView recyclerView;
     Myrecyclerview adapter;
@@ -72,6 +71,7 @@ public class HomeActivity extends AppCompatActivity {
             case R.id.menu1:
                 startActivity(new Intent(HomeActivity.this,AddPerson.class));
                 break;
+            default:return true;
         }
         return super.onOptionsItemSelected(item);
     }
